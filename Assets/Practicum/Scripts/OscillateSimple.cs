@@ -15,6 +15,10 @@ public class OscillateSimple : MonoBehaviour {
     [Range(0, 1)]
     public float speed = .5F;
 
+    public OscillateSimple()
+    {
+    }
+
     void Update()
     {
         float pingPong = Mathf.PingPong(Time.time * speed, 1);
